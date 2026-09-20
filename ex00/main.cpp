@@ -28,9 +28,12 @@ static void testWrongAnimals(void) {
 	std::cout << "\n=== Wrong polymorphism ===" << std::endl;
 	const WrongAnimal *wrongMeta = new WrongAnimal();
 	const WrongAnimal *wrongCat = new WrongCat();
+	const WrongCat directWrongCat;
 
 	std::cout << wrongCat->getType() << " through a WrongAnimal pointer: ";
 	wrongCat->makeSound();
+	std::cout << directWrongCat.getType() << " directly: ";
+	directWrongCat.makeSound();
 	std::cout << wrongMeta->getType() << ": ";
 	wrongMeta->makeSound();
 
