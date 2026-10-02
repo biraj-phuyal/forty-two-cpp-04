@@ -5,13 +5,13 @@
 
 class Dog : public Animal
 {
-public:
-	Dog(void);
-	Dog(const Dog &other);
-	Dog &operator=(const Dog &other);
-	virtual ~Dog(void);
+	public:
+		Dog(void);
+		Dog(const Dog &other);
+		Dog &operator=(const Dog &other);
+		virtual ~Dog(void);
 
-	virtual void makeSound(void) const;
+		virtual void makeSound(void) const;
 };
 
 #endif

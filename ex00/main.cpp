@@ -7,7 +7,7 @@
 #include <iostream>
 
 static void testCorrectAnimals(void) {
-	std::cout << "\n=== Correct polymorphism ===" << std::endl;
+	std::cout << "Correct polymorphism " << std::endl;
 	const Animal *meta = new Animal();
 	const Animal *dog = new Dog();
 	const Animal *cat = new Cat();
@@ -25,7 +25,7 @@ static void testCorrectAnimals(void) {
 }
 
 static void testWrongAnimals(void) {
-	std::cout << "\n=== Wrong polymorphism ===" << std::endl;
+	std::cout << "Wrong polymorphism " << std::endl;
 	const WrongAnimal *wrongMeta = new WrongAnimal();
 	const WrongAnimal *wrongCat = new WrongCat();
 	const WrongCat directWrongCat;
@@ -42,7 +42,7 @@ static void testWrongAnimals(void) {
 }
 
 static void testCopies(void) {
-	std::cout << "\n=== Copy and assignment ===" << std::endl;
+	std::cout << "Copy and assignment " << std::endl;
 	Dog originalDog;
 	Dog copiedDog(originalDog);
 	Cat originalCat;

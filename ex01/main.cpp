@@ -5,7 +5,7 @@
 #include <iostream>
 
 static void testAnimalArray(void) {
-	std::cout << "\n=== Animal array ===" << std::endl;
+	std::cout << "Animal array " << std::endl;
 	const int animalCount = 10;
 	Animal *animals[animalCount];
 
@@ -24,7 +24,7 @@ static void testAnimalArray(void) {
 }
 
 static void testDogDeepCopy(void) {
-	std::cout << "\n=== Dog deep copy ===" << std::endl;
+	std::cout << "Dog deep copy " << std::endl;
 	Dog original;
 	original.setIdea(0, "Chase the ball");
 	Dog copy(original);
@@ -35,7 +35,7 @@ static void testDogDeepCopy(void) {
 }
 
 static void testCatDeepAssignment(void) {
-	std::cout << "\n=== Cat deep assignment ===" << std::endl;
+	std::cout << "Cat deep assignment " << std::endl;
 	Cat original;
 	original.setIdea(0, "Climb the curtains");
 	Cat copy;
