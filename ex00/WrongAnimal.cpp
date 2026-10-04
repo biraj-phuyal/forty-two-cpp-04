@@ -21,9 +21,8 @@ WrongAnimal::~WrongAnimal(void) {
 	std::cout << "WrongAnimal destructor called" << std::endl;
 }
 
-std::string WrongAnimal::getType(void) const
-{
-	return (type);
+std::string WrongAnimal::getType(void) const {
+	return type;
 }
 
 void WrongAnimal::makeSound(void) const

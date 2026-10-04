@@ -6,7 +6,7 @@
 
 #include <iostream>
 
-static void testCorrectAnimals(void) {
+static void CorrectAnimals(void) {
 	std::cout << "Correct polymorphism " << std::endl;
 	const Animal *meta = new Animal();
 	const Animal *dog = new Dog();
@@ -24,7 +24,7 @@ static void testCorrectAnimals(void) {
 	delete meta;
 }
 
-static void testWrongAnimals(void) {
+static void WrongAnimals(void) {
 	std::cout << "Wrong polymorphism " << std::endl;
 	const WrongAnimal *wrongMeta = new WrongAnimal();
 	const WrongAnimal *wrongCat = new WrongCat();
@@ -41,7 +41,7 @@ static void testWrongAnimals(void) {
 	delete wrongMeta;
 }
 
-static void testCopies(void) {
+static void Copies(void) {
 	std::cout << "Copy and assignment " << std::endl;
 	Dog originalDog;
 	Dog copiedDog(originalDog);
@@ -56,8 +56,8 @@ static void testCopies(void) {
 }
 
 int main(void) {
-	testCorrectAnimals();
-	testWrongAnimals();
-	testCopies();
+	CorrectAnimals();
+	WrongAnimals();
+	Copies();
 	return (0);
 }

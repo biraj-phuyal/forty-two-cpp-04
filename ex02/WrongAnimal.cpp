@@ -22,7 +22,7 @@ WrongAnimal::~WrongAnimal(void) {
 }
 
 std::string WrongAnimal::getType(void) const {
-	return (type);
+	return type;
 }
 
 void WrongAnimal::makeSound(void) const {

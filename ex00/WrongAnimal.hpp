@@ -3,8 +3,7 @@
 
 # include <string>
 
-class WrongAnimal
-{
+class WrongAnimal {
 	protected:
 		std::string	type;
 
