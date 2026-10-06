@@ -70,7 +70,7 @@ static void CatAssignment(void) {
 }
 
 int main(void) {
-	// Animal animal; // Does not compile: Animal is abstract.
+	// Animal animal;
 	AnimalArray();
 	DogCopy();
 	DogAssignment();
