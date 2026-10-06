@@ -5,7 +5,6 @@
 #include <iostream>
 
 static void AnimalArray(void) {
-	std::cout << "Abstract Animal array " << std::endl;
 	const int animalCount = 10;
 	Animal *animals[animalCount];
 
@@ -25,7 +24,6 @@ static void AnimalArray(void) {
 }
 
 static void DogCopy(void) {
-	std::cout << "Dog copy" << std::endl;
 	Dog original;
 	original.setIdea(0, "Chase the ball");
 	Dog copy(original);
@@ -37,7 +35,6 @@ static void DogCopy(void) {
 }
 
 static void DogAssignment(void) {
-	std::cout << "Dog assignment" << std::endl;
 	Dog original;
 	original.setIdea(0, "Chase the ball");
 	Dog copy;
@@ -50,7 +47,6 @@ static void DogAssignment(void) {
 }
 
 static void CatCopy(void) {
-	std::cout << "Cat copy" << std::endl;
 	Cat original;
 	original.setIdea(0, "Climb the curtains");
 	Cat copy(original);
@@ -62,7 +58,6 @@ static void CatCopy(void) {
 }
 
 static void CatAssignment(void) {
-	std::cout << "Cat assignment" << std::endl;
 	Cat original;
 	original.setIdea(0, "Climb the curtains");
 	Cat copy;
