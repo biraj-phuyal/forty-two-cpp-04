@@ -20,6 +20,7 @@ static void AnimalArray(void) {
 	}
 	for (int i = 0; i < animalCount; i++)
 		delete animals[i];
+	std::cout << "\n";
 }
 
 static void DogCopy(void) {
@@ -30,6 +31,7 @@ static void DogCopy(void) {
 	original.setIdea(0, "Take a nap");
 	std::cout << "Original idea: " << original.getIdea(0) << std::endl;
 	std::cout << "Copied idea:   " << copy.getIdea(0) << std::endl;
+	std::cout << "\n";
 }
 
 static void DogAssignment(void) {
@@ -41,6 +43,7 @@ static void DogAssignment(void) {
 	original.setIdea(0, "Take a nap");
 	std::cout << "Original idea: " << original.getIdea(0) << std::endl;
 	std::cout << "Assigned idea: " << copy.getIdea(0) << std::endl;
+	std::cout << "\n";
 }
 
 static void CatCopy(void) {
@@ -51,6 +54,7 @@ static void CatCopy(void) {
 	original.setIdea(0, "Sit in a box");
 	std::cout << "Original idea: " << original.getIdea(0) << std::endl;
 	std::cout << "Copied idea:   " << copy.getIdea(0) << std::endl;
+	std::cout << "\n";
 }
 
 static void CatAssignment(void) {
@@ -62,6 +66,7 @@ static void CatAssignment(void) {
 	original.setIdea(0, "Sit in a box");
 	std::cout << "Original idea: " << original.getIdea(0) << std::endl;
 	std::cout << "Assigned idea: " << copy.getIdea(0) << std::endl;
+	std::cout << "\n";
 }
 
 int main(void) {

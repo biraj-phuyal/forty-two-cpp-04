@@ -21,6 +21,7 @@ static void CorrectAnimals(void) {
 	delete cat;
 	delete dog;
 	delete meta;
+	std::cout << "\n";
 }
 
 static void WrongAnimals(void) {
@@ -37,6 +38,7 @@ static void WrongAnimals(void) {
 
 	delete wrongCat;
 	delete wrongMeta;
+	std::cout << "\n";
 }
 
 static void Copies(void) {
@@ -50,6 +52,7 @@ static void Copies(void) {
 	copiedDog.makeSound();
 	std::cout << assignedCat.getType() << ": ";
 	assignedCat.makeSound();
+	std::cout << "\n";
 }
 
 int main(void) {
